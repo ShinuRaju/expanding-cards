@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.container h1 {
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.5rem;
+}
+
+.container .panel {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.panel div {
+  margin: -10px -10px;
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: flex 0.3s linear;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.panel div h3 {
+  background-color: rgba(25, 25, 25, 0.4);
+  padding: 1rem;
+  color: white;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s linear;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container .panel div.active {
+  flex: 8;
+}
+
+.container .panel div.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    flex-direction: column;
+  }
+
+  .panel div {
+    height: 80vh;
+  }
+}
