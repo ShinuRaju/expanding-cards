@@ -2,17 +2,26 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 93vh;
+}
+
+.container {
+  height: 100%;
+}
+
 .container h1 {
   text-align: center;
   white-space: nowrap;
   padding: 0.5rem;
+  height: 10%;
 }
 
 .container .panel {
-  height: 90vh;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  height: 90%;
 }
 
 .panel div {
